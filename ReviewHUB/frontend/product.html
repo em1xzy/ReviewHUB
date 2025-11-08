@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes do Produto - ReviewHub</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html">⬅ Voltar</a>
+    <h1 id="product-name">Produto</h1>
+  </header>
+
+  <main class="container">
+    <img id="product-image" src="" alt="Imagem do produto" />
+    <p id="product-description"></p>
+
+    <section id="reviews-section">
+      <h2>Avaliações</h2>
+      <ul id="review-list"></ul>
+    </section>
+
+    <section id="add-review">
+      <h3>Deixe sua avaliação:</h3>
+      <form id="review-form">
+        <label>Nota (1 a 5):</label>
+        <input type="number" id="rating" min="1" max="5" required>
+        <label>Comentário:</label>
+        <textarea id="comment" required></textarea>
+        <button type="submit">Enviar Avaliação</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ReviewHub</p>
+  </footer>
+
+  <script src="./scripts/product.js"></script>
+</body>
+</html>
+
