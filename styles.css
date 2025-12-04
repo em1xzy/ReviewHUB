@@ -11,20 +11,33 @@ header {
   background-color: #6200ea;
   color: #fff;
   padding: 1.5rem 0;
+  position: relative; /* Adicionado para posicionar o botão voltar */
 }
 
 header img {
   width: 200px;
 }
 
+/* --- ESTILO PARA PADRONIZAR A IMAGEM DO PRODUTO (NOVO) --- */
+.product-image-display {
+  width: 100%;
+  max-width: 300px; /* Define um tamanho máximo uniforme */
+  height: 300px;   /* Define uma altura fixa */
+  object-fit: cover; /* Garante que a imagem preencha a área sem distorcer (cortando se necessário) */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais destacada */
+  margin: 1rem auto;
+  display: block; /* Centraliza a imagem no layout */
+}
+
 .container {
-  width: 90%;
+  width: 80%;
   max-width: 800px;
   margin: 2rem auto;
 }
 
 .product-card {
-  background: #fafafa;
+  background: #fff; /* Mudando para branco para melhor contraste */
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   padding: 1rem;
@@ -35,6 +48,8 @@ header img {
 .product-card img {
   width: 100%;
   max-width: 200px;
+  height: 200px; /* Padronizando altura das imagens no catálogo */
+  object-fit: contain; /* Ajusta a imagem dentro do container, mostrando ela inteira */
   border-radius: 8px;
 }
 
@@ -45,8 +60,28 @@ button {
   border-radius: 5px;
   padding: 0.6rem 1rem;
   cursor: pointer;
+  transition: background-color 0.3s; /* Transição suave */
 }
 
 button:hover {
   background-color: #4b00b0;
+}
+
+/* --- ESTILO PARA O BOTÃO VOLTAR (NOVO) --- */
+.back-link {
+  position: absolute;
+  top: 1.5rem; /* Alinha com o padding do header */
+  left: 10%; /* Alinha com o container principal */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: #4b00b0; /* Cor de fundo para destacar */
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-link:hover {
+  background-color: #3a008c;
+  transform: scale(1.05); /* Pequeno efeito ao passar o mouse */
 }

@@ -3,8 +3,9 @@ const produtos = [
     id: 1,
     nome: "Fone Bluetooth XYZ",
     descricao: "Som potente e conexão estável via Bluetooth 5.0.",
-    imagem: "./assets/fone.jpg",
+    imagem:"./assets/fone.jpg",
     media: 4.5
+
   },
   {
     id: 2,
